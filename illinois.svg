@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="44.0844"
+   height="63.67783"
+   viewBox="0 0 44.0844 63.677829"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="illinois.svg"
+   inkscape:version="1.4 (e7c3feb, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.611336"
+     inkscape:cx="68.319149"
+     inkscape:cy="48.677394"
+     inkscape:window-width="1914"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     d="m 0,0 v 17.143843 h 9.7967145 v 29.38933 H 0 V 63.677831 H 44.084401 V 46.533173 h -9.796714 v -29.38933 h 9.796714 V 0 Z"
+     fill="#13294b"
+     id="path1"
+     style="stroke-width:0.814086"
+     sodipodi:nodetypes="ccccccccccccc" />
+  <path
+     d="M 34.288501,14.694258 H 41.63506 V 2.4487717 H 2.4482018 V 14.694258 h 7.3481057 c 1.3512215,0 2.4486085,1.095516 2.4486085,2.44926 v 29.390958 c 0,1.350895 -1.097388,2.448609 -2.4486085,2.448609 H 2.4482018 V 61.227757 H 41.635061 V 48.983085 h -7.346559 c -1.352767,0 -2.44983,-1.097714 -2.44983,-2.448609 V 17.143518 c 0,-1.353744 1.097063,-2.44926 2.44983,-2.44926"
+     fill="#ff5f05"
+     id="path2"
+     style="stroke-width:0.814086" />
+</svg>
