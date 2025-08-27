@@ -18,7 +18,7 @@ img {
   width: 100%;
 }
 
-/* ----- Header ----- */
+/* ----- Header/Footer ----- */
 
 header {
     /* background-color: black; */
@@ -76,6 +76,28 @@ nav a {
     height: 2ch;
 }
 
+footer {
+    background: linear-gradient(
+      110deg,
+      /* #fdd4c0, #fdd4c0 63%, */
+      /* #faac86 63%, #faac86 72% */
+      /* #5277a1 72%, #5277a1 79%, */
+      /* #373773 79%, #373773 87%, */
+      /* #092264 87%, #092254 100% */
+      #fdd4c0 0%, #fdd4c0 75%,
+      #faac86 75%, #faac86 81%,
+      #5277a1 81%, #5277a1 87%,
+      #373773 87%, #373773 93%,
+      #092264 93%, #092254 100%
+    );
+    border-top: 5px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-count: 2;
+}
+
 
 /* ----- Dropdown ----- */
 
@@ -114,12 +136,17 @@ section {
   border: 1px solid black;
   box-sizing: border-box;
   padding: 2ch;
-  max-width: 100ch;
+  max-width: 120ch;
   width: 100%;
   background-color: white;
   margin: 1ch;
 
   border-radius: 2ch;
+
+  /* display: grid; */
+  /* grid-template-columns: 60ch 60ch; */
+  column-count: 2;
+  column-width: 50ch;
 }
 
 section table {
@@ -138,13 +165,18 @@ section table ul {
 }
 
 section img {
-  width: 80%;
+  width: 100%;
 }
 
 /* center content within a section */
 .center {
   margin: 1ch auto 1ch auto;
   display: block;
+}
+
+figure {
+  /* prevent caption from being separated/split across columns */
+  display: inline-block;
 }
 
 figcaption {
