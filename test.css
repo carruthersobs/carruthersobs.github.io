@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+
+  background-image: url("pattern2.svg");
+  background-size: 30px;
+}
+
+.push {
+    margin-right: auto;
+}
+
+/* ----- Header ----- */
+
+header {
+    /* background-color: black; */
+    background: linear-gradient(110deg,
+        /* #092264, #092254 10%, */
+        /* #373773 10%, #373773 20%, */
+        /* #5277a1 20%, #5277a1 30%, */
+        /* #faac86 30%, #faac86 40%, */
+        /* #fdd4c0 40% */
+
+        /* #092264, #092254 05%, */
+        /* #373773 05%, #373773 10%, */
+        /* #5277a1 10%, #5277a1 15%, */
+        /* #faac86 15%, #faac86 20%, */
+        /* #fdd4c0 20% */
+
+        #092264, #092254 05ch,
+        #373773 05ch, #373773 10ch,
+        #5277a1 10ch, #5277a1 15ch,
+        #faac86 15ch, #faac86 20ch,
+        #fdd4c0 20ch
+    );
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+
+    margin-bottom: 2ch;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 120ch;
+    /* width: 100%; */
+    margin-left: 22ch;
+}
+
+nav li, img, span {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin: 1ch;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav span {
+  font-size: 20px;
+}
+
+.redcirc {
+    height: 2ch;
+}
+
+nav img {
+    height: 5ch;
+}
+
+
+/* ----- Dropdown ----- */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----- Main Content ----- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1ch;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 2ch;
+  box-sizing: border-box;
+  padding: 2ch;
+  margin: 1ch;
+  max-width: 120ch;
+  width: 100%;
+
+  background-color: white;
+}
+
+.banner {
+  overflow: hidden;
+  padding: 0;
+}
+
+.banner img {
+  width: 100%;
+  margin: 0;
+}
+
+.banner span {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  color: white;
+  font-size: 4cqmax;
+  width: 30%;
+}
