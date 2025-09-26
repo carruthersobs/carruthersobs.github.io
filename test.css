@@ -1,62 +1,68 @@
+:root {
+  --basewidth: 100ch;
+}
 body {
   margin: 0;
 
   background-image: url("pattern2.svg");
   background-size: 30px;
+  font-family: Helvetica;
+
 }
 
 .push {
     margin-right: auto;
 }
 
-/* ----- Header ----- */
+img {
+  width: 100%;
+}
+
+/* ----- Header/Footer ----- */
 
 header {
     /* background-color: black; */
     background: linear-gradient(110deg,
-        /* #092264, #092254 10%, */
-        /* #373773 10%, #373773 20%, */
-        /* #5277a1 20%, #5277a1 30%, */
-        /* #faac86 30%, #faac86 40%, */
-        /* #fdd4c0 40% */
 
-        /* #092264, #092254 05%, */
-        /* #373773 05%, #373773 10%, */
-        /* #5277a1 10%, #5277a1 15%, */
-        /* #faac86 15%, #faac86 20%, */
-        /* #fdd4c0 20% */
+        /* #092264, #092254 05ch, */
+        /* #373773 05ch, #373773 10ch, */
+        /* #5277a1 10ch, #5277a1 15ch, */
+        /* #faac86 15ch, #faac86 20ch, */
+        /* #fdd4c0 20ch */
 
-        #092264, #092254 05ch,
-        #373773 05ch, #373773 10ch,
-        #5277a1 10ch, #5277a1 15ch,
-        #faac86 15ch, #faac86 20ch,
-        #fdd4c0 20ch
+        #092264, #092254 9%,
+        #373773 9%, #373773 18%,
+        #5277a1 18%, #5277a1 27%,
+        #faac86 27%, #faac86 36%,
+        #fdd4c0 36%
+
+        /* #fdd4c0 00ch, #fdd4c0 05ch, */
+        /* #faac86 05ch, #faac86 10ch, */
+        /* #5277a1 10ch, #5277a1 15ch, */
+        /* #373773 15ch, #373773 20ch, */
+        /* #092264 20ch, #092254 25ch */
     );
 
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    align-content: center;
-
-    margin-bottom: 2ch;
+    justify-content: right;
 }
 
 
 nav {
     display: flex;
-    align-items: center;
-    width: 120ch;
+    align-content: center;
+    /* align-items: center; */
+    width: variable(basewidth);
     /* width: 100%; */
-    margin-left: 22ch;
+    /* margin-left: 22ch; */
 }
 
-nav li, img, span {
-    display: flex;
-    align-items: center;
+nav li {
+    /* color: white; */
     color: black;
     text-decoration: none;
     margin: 1ch;
-    font-family: Helvetica;
     font-size: 18px;
     font-weight: 600;
     list-style-type: none;
@@ -66,16 +72,34 @@ nav a {
   text-decoration: none;
 }
 
-nav span {
-  font-size: 20px;
-}
-
 .redcirc {
     height: 2ch;
 }
 
-nav img {
-    height: 5ch;
+footer {
+    background: linear-gradient(
+      110deg,
+      /* #fdd4c0, #fdd4c0 63%, */
+      /* #faac86 63%, #faac86 72% */
+      /* #5277a1 72%, #5277a1 79%, */
+      /* #373773 79%, #373773 87%, */
+      /* #092264 87%, #092254 100% */
+      #fdd4c0 0%, #fdd4c0 75%,
+      #faac86 75%, #faac86 81%,
+      #5277a1 81%, #5277a1 87%,
+      #373773 87%, #373773 93%,
+      #092264 93%, #092254 100%
+    );
+    border-top: 5px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.twocol {
+  column-count: 2;
+  column-width: 50ch;
 }
 
 
@@ -107,36 +131,78 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 1ch;
+  line-height: 2.0;
 }
 
 section {
   border: 1px solid black;
-  border-radius: 2ch;
   box-sizing: border-box;
   padding: 2ch;
-  margin: 1ch;
   max-width: 120ch;
   width: 100%;
-
   background-color: white;
+  margin: 1ch;
+
+  border-radius: 2ch;
+
+  /* display: grid; */
+  /* grid-template-columns: 60ch 60ch; */
+}
+
+section table {
+  width: 50ch;
+  margin: 1ch auto 1ch auto;
+  border-collapse: collapse;
+}
+
+section table td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1ch;
+}
+
+section table ul {
+  padding-left: 2ch;
+  /* list-style-type: none; */
+}
+
+section img {
+  width: 100%;
+}
+
+/* center content within a section */
+.center {
+  margin: 1ch auto 1ch auto;
+  display: block;
+}
+
+figure {
+  /* prevent caption from being separated/split across columns */
+  display: inline-block;
+}
+
+figcaption {
+  text-align: center;
 }
 
 .banner {
   overflow: hidden;
   padding: 0;
+  line-height: 0;
 }
 
 .banner img {
-  width: 100%;
+  height: 100%;
   margin: 0;
 }
 
-.banner span {
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  color: white;
-  font-size: 4cqmax;
-  width: 30%;
+.inline-right {
+  float: right;
+  width: 40ch;
+  margin: 3ch;
 }
+
+h1 { font-size:1.5em }
+h2 { font-size: 1.2em }
