@@ -3,15 +3,77 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Carruthers</title>
-        <meta name="description" content="">
+        <title>Carruthers Geocoronal Observatory</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="/carruthers.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="test.css" type="text/css" media="all">
     </head>
-    <body style="display: flex; justify-content: center; align-content: center; height: 100%">
-        <img src="logo.svg" style="width: 600px"/>
-    </body>
+
+    <header>
+        <nav>
+            <span class="push"> </span>
+            <a href="https://science.nasa.gov/mission/carruthers-geocorona-observatory/">
+                <!-- <li class="dropdown">News</li> -->
+            </a>
+            <a href="foo"><li>Science</li></a>
+            <a href="foo"><li>Instrument</li></a>
+            <a href="foo"><li>FAQ</li></a>
+            <a href="foo"><li>Data</li></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="banner.svg">
+        </section>
+        <section class="twocol">
+            <!-- <figure class="inline-right"> -->
+            <figure>
+                <img src="exosphere.jpg" style="width: 100%"/>
+                <figcaption>The exosphere is the outermost layer of the Earth's atmosphere.</figcaption>
+            </figure>
+
+            Carruthers Geocorona Observatory will study the <a href="https://en.wikipedia.org/wiki/Geocorona">geocorona</a>, the outermost region of the Earth's atmosphere where gas is so diffuse that particles rarely collide.
+
+            The exosphere is primarily composed of atomic hydrogen (H) and is the pathway for permanent loss of Earth's H to space.  Carruthers is equipped to two ultraviolet (UV) cameras which will capture exospheric UV emission in unprecedented detail.
+
+            Carruthers has two primary science objectives:
+            <ul>
+                <li>What physical processes control the shape and distribution of the exosphere?</li>
+                <li>How does the exosphere respond to transient <a href="https://en.wikipedia.org/wiki/Geomagnetic_storm">geomagnetic storms?</a></li>
+            </ul>
+        </section>
+
+        <section class="twocol">
+            <figure>
+                <img src="carruthers_wide.jpg"/>
+                <figcaption>Earth-facing side of spacecraft showing bus (bottom) and instrumentation (top)</figcaption>
+            </figure>
+            <h1>Mission Specifications</h1>
+            <table>
+                <tr>
+                    <td> <b>Objective</b> </td> <td>Earth exosphere (geocorona)</td>
+                </tr>
+                <tr>
+                    <td> <b>Orbit</b> </td> <td>Halo orbit around Lagrange point L1</td>
+                </tr>
+                <tr>
+                    <td> <b>Instruments</b> </td>
+                    <td>
+                        <ul>
+                            <li> Wide-field Imager (WFI) </li>
+                            <li> Narrow-field Imager (NFI) </li>
+                            <li> Carruthers Observatory Student Solar MOnitor (COSSMO) </li>
+                        </ul>
+                    </td>
+            </table>
+
+            <figure>
+                <img class="center" src="orbit.svg"/>
+                <figcaption>Carruthers orbit around L1 and imager FOV</figcaption>
+            </figure>
+        </section>
+    </main>
 </html>
