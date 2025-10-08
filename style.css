@@ -1,5 +1,5 @@
 :root {
-  --basewidth: 100ch;
+  --basewidth: 120ch;
 }
 body {
   margin: 0;
@@ -45,7 +45,7 @@ header {
 
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
 
 
@@ -53,8 +53,7 @@ nav {
     display: flex;
     align-content: center;
     /* align-items: center; */
-    width: variable(basewidth);
-    /* width: 100%; */
+    width: var(--basewidth);
     /* margin-left: 22ch; */
 }
 
@@ -140,7 +139,7 @@ section {
   border: 1px solid black;
   box-sizing: border-box;
   padding: 2ch;
-  max-width: 120ch;
+  max-width: var(--basewidth);
   width: 100%;
   background-color: white;
   margin: 1ch;
