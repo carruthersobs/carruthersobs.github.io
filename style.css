@@ -171,8 +171,15 @@ section img {
   width: 100%;
 }
 
-/* center content within a section */
+/* center contents of a container */
 .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* center content within a section */
+.centercontent {
   margin: 1ch auto 1ch auto;
   display: block;
 }
