@@ -80,7 +80,7 @@
 
         <section class="center">
             <h1>Carruthers Model</h1>
-            <model-viewer reveal="manual" style="height: 500px; width: inherit;" alt="3D model of Carruthers spacecraft" src="model.glb" poster="model_preview.png" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1" camera-orbit="45.92deg 61.68deg 4.368m" field-of-view="30deg" auto-rotate exposure="1">
+            <model-viewer interaction-prompt="none" reveal="manual" style="height: 500px; width: inherit;" alt="3D model of Carruthers spacecraft" src="model.glb" poster="model_preview.png" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1" camera-orbit="45.92deg 71.68deg 3.368m" camera-target="auto .35m auto" field-of-view="30deg" auto-rotate exposure="1">
                 <button id="button-load" style="position:absolute; left: 40%; top: 40%; font-size: 1.5em" onclick="document.querySelector('model-viewer').dismissPoster()" slot="poster">Load 3D Model</button>
                 <img id="lazy-load-poster" slot="poster" style="object-fit: contain; height: 100%;" src="model_preview.png"></div>
             </model-viewer>
