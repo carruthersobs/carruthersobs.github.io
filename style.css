@@ -89,7 +89,8 @@ footer {
       #373773 87%, #373773 93%,
       #092264 93%, #092254 100%
     );
-    border-top: 5px solid black;
+    /* border-top: 5px solid black; */
+    padding: 1em;
 
     display: flex;
     flex-direction: row;
