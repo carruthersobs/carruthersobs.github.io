@@ -8,6 +8,11 @@ body {
   background-size: 30px;
   font-family: Helvetica;
 
+  /* Full-height flex column so a short <main> still pushes the footer to the
+     bottom of the viewport (footer scrolls away normally when content is tall). */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .push {
@@ -137,6 +142,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* Grow to fill leftover vertical space, keeping the footer at the bottom. */
+  flex: 1 0 auto;
 
   padding: 1ch;
   line-height: 2.0;
