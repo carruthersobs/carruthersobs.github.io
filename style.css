@@ -102,6 +102,12 @@ footer {
   column-width: 50ch;
 }
 
+/* When a .twocol's content is wrapped in <div>s, keep each div intact within a
+   single column so it acts as one explicit column (one div per column). */
+.twocol > div {
+  break-inside: avoid;
+}
+
 
 /* ----- Dropdown ----- */
 
