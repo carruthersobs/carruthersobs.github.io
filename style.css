@@ -139,7 +139,7 @@ main {
 section {
   border: 1px solid black;
   box-sizing: border-box;
-  padding: 2ch;
+  padding: 2ch 4ch 2ch 4ch;
   max-width: var(--basewidth);
   width: 100%;
   background-color: white;
