@@ -7,7 +7,7 @@ body {
   /* Animated contour background is drawn by background.js onto #bg-canvas;
      this solid colour is the backdrop the gray lines sit on. */
   background-color: #ffffff;
-  font-family: Helvetica;
+  font-family: "Public Sans", Helvetica, Arial, sans-serif;
 
   /* Full-height flex column so a short <main> still pushes the footer to the
      bottom of the viewport (footer scrolls away normally when content is tall). */
@@ -80,7 +80,7 @@ nav li {
     text-decoration: none;
     margin: 1ch;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     list-style-type: none;
 }
 
