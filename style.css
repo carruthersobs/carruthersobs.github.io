@@ -4,8 +4,9 @@
 body {
   margin: 0;
 
-  background-image: url("pattern2.svg");
-  background-size: 30px;
+  /* Animated contour background is drawn by background.js onto #bg-canvas;
+     this solid colour is the backdrop the gray lines sit on. */
+  background-color: #ffffff;
   font-family: Helvetica;
 
   /* Full-height flex column so a short <main> still pushes the footer to the
@@ -13,6 +14,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Full-viewport animated background, behind all page content. */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  display: block;
 }
 
 .push {
